@@ -1591,26 +1591,3 @@
 </body>
 
 </html>
-
-<script>
-    jQuery(document).ready(function($) {
-        // Wait for the document to be ready
-        $(window).load(function() {
-            // Wait for the page to fully load
-            var lastSlide = $('#extended-slide'); // Select the last slide by ID
-            var videoElement = lastSlide.find('video')[0]; // Assuming your video is contained within a <video> element
-
-            if (videoElement) {
-                // If the last slide contains a video
-                videoElement.onloadedmetadata = function() {
-                    // When the video metadata is loaded (video is ready)
-                    var videoDuration = videoElement.duration * 1000; // Convert duration to milliseconds
-                    var sliderContainer = $('.main-slider'); // Change '.your-slider-container' to match your slider's container element
-
-                    // Update the duration of the last slide
-                    sliderContainer.find('.elementor-repeater-item:last-child').attr('data-duration', videoDuration);
-                };
-            }
-        });
-    });
-</script>
