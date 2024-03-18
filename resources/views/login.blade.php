@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template">
 
 <head>
     <meta charset="utf-8" />
@@ -10,7 +10,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon/favicon.ico')}}" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,35 +18,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap" rel="stylesheet" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/fonts/fontawesome.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/fonts/tabler-icons.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/fonts/flag-icons.css')}}" />
+    <link rel="stylesheet" href="{{ url('assets/vendor/fonts/fontawesome.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/fonts/tabler-icons.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/fonts/flag-icons.css')}}" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/css/rtl/theme-default.css')}}" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{asset('assets/css/demo.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/css/rtl/core.css')}}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{url('assets/vendor/css/rtl/theme-default.css')}}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{url('assets/css/demo.css')}}" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/node-waves/node-waves.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/typeahead-js/typeahead.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/apex-charts/apex-charts.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/swiper/swiper.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/node-waves/node-waves.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/typeahead-js/typeahead.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/apex-charts/apex-charts.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/swiper/swiper.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="{{asset('assets/vendor/css/pages/cards-advance.css')}}" />
+    <link rel="stylesheet" href="{{url('assets/vendor/css/pages/cards-advance.css')}}" />
 
     <!-- Helpers -->
-    <script src="{{asset('assets/vendor/js/helpers.js')}}"></script>
+    <script src="{{url('assets/vendor/js/helpers.js')}}"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-    <script src="{{asset('assets/vendor/js/template-customizer.js')}}"></script>
+    <script src="{{url('assets/vendor/js/template-customizer.js')}}"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{asset('assets/js/config.js')}}"></script>
+    <script src="{{url('assets/js/config.js')}}"></script>
 </head>
 
 <body>
@@ -119,17 +119,19 @@
                         </a>
                     </li>
                     <!-- <li class="menu-item">
-                <a href="app-calendar.html" class="menu-link">
-                    <i class="menu-icon tf-icons ti ti-calendar"></i>
-                    <div data-i18n="Calendar">Calendar</div>
-                </a>
-                </li> -->
+              <a href="app-calendar.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-calendar"></i>
+                <div data-i18n="Calendar">Calendar</div>
+              </a>
+            </li> -->
                     <li class="menu-item">
                         <a href="app-kanban.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-layout-kanban"></i>
                             <div data-i18n="Kanban">Kanban</div>
                         </a>
                     </li>
+
+
 
                     <!-- Academy menu start -->
                     <li class="menu-item">
@@ -156,6 +158,8 @@
                         </ul>
                     </li>
                     <!-- Academy menu end -->
+
+
 
                     <!-- Invoices -->
                     <li class="menu-item">
@@ -256,6 +260,7 @@
                         </ul>
                     </li>
 
+
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-file"></i>
@@ -272,6 +277,7 @@
                                             <div data-i18n="Profile">Profile</div>
                                         </a>
                                     </li>
+
                                 </ul>
                             </li>
                             <li class="menu-item">
@@ -284,8 +290,14 @@
                                             <div data-i18n="Account">Account</div>
                                         </a>
                                     </li>
+
+
+
                                 </ul>
                             </li>
+
+
+
                         </ul>
                     </li>
                     <li class="menu-item">
@@ -362,6 +374,15 @@
 
                         </ul>
                     </li>
+
+
+
+
+
+
+
+
+
 
                     <!-- Misc -->
 
@@ -475,7 +496,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 me-3">
                                                         <div class="avatar">
-                                                            <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                                            <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
@@ -511,7 +532,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 me-3">
                                                         <div class="avatar">
-                                                            <img src="../../assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
+                                                            <img src="assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
@@ -547,7 +568,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 me-3">
                                                         <div class="avatar">
-                                                            <img src="../../assets/img/avatars/9.png" alt class="h-auto rounded-circle" />
+                                                            <img src="assets/img/avatars/9.png" alt class="h-auto rounded-circle" />
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
@@ -583,7 +604,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 me-3">
                                                         <div class="avatar">
-                                                            <img src="../../assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
+                                                            <img src="assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
@@ -601,7 +622,7 @@
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0 me-3">
                                                         <div class="avatar">
-                                                            <img src="../../assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
+                                                            <img src="assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
@@ -648,7 +669,7 @@
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -657,7 +678,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
@@ -777,7 +798,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-                                                        <img src="../../assets/img/illustrations/card-website-analytics-1.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
+                                                        <img src="assets/img/illustrations/card-website-analytics-1.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -818,7 +839,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-                                                    <img src="../../assets/img/illustrations/card-website-analytics-2.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
+                                                    <img src="assets/img/illustrations/card-website-analytics-2.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
                                                 </div>
                                             </div>
                                         </div>
@@ -858,7 +879,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-                                                    <img src="../../assets/img/illustrations/card-website-analytics-3.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
+                                                    <img src="assets/img/illustrations/card-website-analytics-3.png" alt="Website Analytics" width="170" class="card-website-analytics-img" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1480,7 +1501,7 @@
                             <!-- Projects table -->
                             <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 mb-lg-0">
                                 <div class="card">
-                                    <!-- <div class="card-datatable table-responsive">
+                                    <div class="card-datatable table-responsive">
                                         <table class="datatables-projects table border-top">
                                             <thead>
                                                 <tr>
@@ -1494,7 +1515,7 @@
                                                 </tr>
                                             </thead>
                                         </table>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <!--/ Projects table -->
@@ -1533,6 +1554,7 @@
             </div>
             <!-- / Layout page -->
         </div>
+
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
 
@@ -1544,28 +1566,51 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="{{asset('assets/vendor/libs/jquery/jquery.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/popper/popper.js')}}"></script>
-    <script src="{{asset('assets/vendor/js/bootstrap.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/node-waves/node-waves.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/hammer/hammer.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/i18n/i18n.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>
-    <script src="{{asset('assets/vendor/js/menu.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/jquery/jquery.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/popper/popper.js')}}"></script>
+    <script src="{{url('assets/vendor/js/bootstrap.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/node-waves/node-waves.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/hammer/hammer.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/i18n/i18n.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>
+    <script src="{{url('assets/vendor/js/menu.js')}}"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="{{asset('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}"></script>
-    <script src="{{asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/swiper/swiper.js')}}"></script>
+    <script src="{{url('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
 
     <!-- Main JS -->
-    <script src="{{asset('assets/js/main.js')}}"></script>
+    <script src="{{url('assets/js/main.js')}}"></script>
 
     <!-- Page JS -->
-    <script src="{{asset('assets/js/dashboards-analytics.js')}}"></script>
+    <script src="{{url('assets/js/dashboards-analytics.js')}}"></script>
 </body>
 
 </html>
+
+<script>
+    jQuery(document).ready(function($) {
+        // Wait for the document to be ready
+        $(window).load(function() {
+            // Wait for the page to fully load
+            var lastSlide = $('#extended-slide'); // Select the last slide by ID
+            var videoElement = lastSlide.find('video')[0]; // Assuming your video is contained within a <video> element
+
+            if (videoElement) {
+                // If the last slide contains a video
+                videoElement.onloadedmetadata = function() {
+                    // When the video metadata is loaded (video is ready)
+                    var videoDuration = videoElement.duration * 1000; // Convert duration to milliseconds
+                    var sliderContainer = $('.main-slider'); // Change '.your-slider-container' to match your slider's container element
+
+                    // Update the duration of the last slide
+                    sliderContainer.find('.elementor-repeater-item:last-child').attr('data-duration', videoDuration);
+                };
+            }
+        });
+    });
+</script>
