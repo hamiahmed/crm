@@ -16,6 +16,7 @@ class user_authentication
      */
     public function handle(Request $request, Closure $next)
     {
+
         if (empty(session()->get('userdata'))) {
             return redirect('login');
         } else {

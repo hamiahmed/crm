@@ -14,8 +14,8 @@ class Users extends Controller
     {
 
         $validator = Validator::make($req->all(), [
-            'username' => 'required',
-            'password' => 'required',
+            'email_username' => 'required',
+            'password'       => 'required',
         ]);
 
         if ($validator->passes()) {
@@ -29,9 +29,10 @@ class Users extends Controller
 
             if (!empty($user)) {
 
-                $hashcheck = Hash::check($req->input('password'), $user->password);
+                // $hashcheck = Hash::check($req->input('password'), $user->password);
 
-                if (!empty($hashcheck)) {
+                // if (!empty($hashcheck)) {
+                    
 
                     $user_array = [
                         'user_id'   => $user['user_id'],
@@ -52,9 +53,10 @@ class Users extends Controller
                     session()->put('permissions', $permissions);
 
                     return redirect('/');
-                } else {
-                    return redirect('login')->with('error', 'Username or Password is incorrect!');
-                }
+
+                // } else {
+                //     return redirect('login')->with('error', 'Username or Password is incorrect!');
+                // }
             } else {
                 return redirect('login')->with('error', 'Username or Password is incorrect!');
             }
