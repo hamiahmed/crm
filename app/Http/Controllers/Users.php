@@ -12,7 +12,6 @@ class Users extends Controller
 {
     public function login(Request $req)
     {
-
         $validator = Validator::make($req->all(), [
             'email_username' => 'required',
             'password'       => 'required',
@@ -25,14 +24,12 @@ class Users extends Controller
                 ->where('username', $req->input('username'))
                 ->first();
 
-               
-
             if (!empty($user)) {
 
                 // $hashcheck = Hash::check($req->input('password'), $user->password);
 
                 // if (!empty($hashcheck)) {
-                    
+
 
                     $user_array = [
                         'user_id'   => $user['user_id'],
@@ -42,18 +39,17 @@ class Users extends Controller
                         'role_name' => $user['role']
                     ];
 
-                    
-                    $module_permissions = Permission::select('permissions.*', 'modules.module_name')->join('modules', 'modules.id', '=', 'permissions.module_id')->where('role_id', $user['role_id'])->get();
 
-                    foreach ($module_permissions as $module_permission) {
-                        $permissions[$module_permission['module_name']] = json_decode($module_permission['details'], true);
-                    }
-                    
+                    // $module_permissions = Permission::select('permissions.*', 'modules.module_name')->join('modules', 'modules.id', '=', 'permissions.module_id')->where('role_id', $user['role_id'])->get();
+
+                    // foreach ($module_permissions as $module_permission) {
+                    //     $permissions[$module_permission['module_name']] = json_decode($module_permission['details'], true);
+                    // }
+
                     session()->put('userdata', $user_array);
-                    session()->put('permissions', $permissions);
+                    // session()->put('permissions', $permissions);
 
                     return redirect('/');
-
                 // } else {
                 //     return redirect('login')->with('error', 'Username or Password is incorrect!');
                 // }
